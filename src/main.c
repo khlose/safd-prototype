@@ -11,7 +11,7 @@
 
 #include "stm32l4xx.h"
 #include "stm32l476g_discovery.h"
-#include "Trace.h"
+#include "stm32l476g_discovery_gyroscope.h"
 
 void SystemClock_Config(void);
 void Error_Handler(void);
@@ -25,56 +25,33 @@ int main(void)
 	SystemClock_Config();
 	BSP_LED_Init(LED_GREEN);
 
-	/*Try out spi*/
-
-	/* SPI Init Routine
-	SpiHandle.Instance               = DISCOVERY_SPIx;
-
-	SpiHandle.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_256;
-	SpiHandle.Init.Direction         = SPI_DIRECTION_2LINES;
-	SpiHandle.Init.CLKPhase          = SPI_PHASE_1EDGE;
-	SpiHandle.Init.CLKPolarity       = SPI_POLARITY_HIGH;
-	SpiHandle.Init.CRCCalculation    = SPI_CRCCALCULATION_DISABLED;
-	SpiHandle.Init.CRCPolynomial     = 7;
-	SpiHandle.Init.DataSize          = SPI_DATASIZE_8BIT;
-	SpiHandle.Init.FirstBit          = SPI_FIRSTBIT_MSB;
-	SpiHandle.Init.NSS               = SPI_NSS_SOFT;
-	SpiHandle.Init.TIMode            = SPI_TIMODE_DISABLED;
-
-	SpiHandle.Init.Mode = SPI_MODE_MASTER;
-	 */
-
-	/*Initialize and check for status*/
-	/*
-	if(HAL_SPI_Init(&SpiHandle) != HAL_OK)
-	{
-		Error_Handler();
-	}
-	*/
+	/*Try out joystick*/
 
 	BSP_JOY_Init(JOY_MODE_GPIO);
 	JOYState_TypeDef joyState;
-	ACCELERO_IO_Init();
-	uint8_t x_h,x_l,y_h,y_l,z_h,z_l;
-	uint16_t x,y,z;
+
+	/*Initialize gyroscope for angular velocity measurement*/
+	uint8_t gyroRet;
+	gyroRet = BSP_GYRO_Init();
+
+	float gyroRead[3] = {0,0,0};
+
+
+
 	while(1)
 	{
-		x_h = ACCELERO_IO_Read(0x29);
-		x_l = ACCELERO_IO_Read(0x28);
-		y_h = ACCELERO_IO_Read(0x2B);
-		y_l = ACCELERO_IO_Read(0x2A);
-		z_h = ACCELERO_IO_Read(0x2D);
-		z_l = ACCELERO_IO_Read(0x2C);
-		x = x_h << 8 | x_l;
-		y = y_h << 8 | y_l;
-		z = z_h << 8 | z_l;
+
+		if(gyroRet == GYRO_OK) BSP_GYRO_GetXYZ(gyroRead);
+
+		if(gyroRead[2] < 0) BSP_LED_On(LED_GREEN);
+		else BSP_LED_Off(LED_GREEN);
 
 
 
+		/*Use joystick to debug*/
 		joyState = BSP_JOY_GetState();
 		if(joyState == JOY_UP)	BSP_LED_Off(LED_GREEN);
 		if(joyState == JOY_DOWN)	BSP_LED_On(LED_GREEN);
-
 	}
 }
 

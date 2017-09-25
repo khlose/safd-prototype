@@ -72,7 +72,10 @@ src/main.o: ../src/main.c \
  C:/Users/spinkoh/Documents/GitHub/eclipse-workspace/prototype/HAL_Driver/Inc/stm32l4xx_hal_pcd_ex.h \
  C:/Users/spinkoh/Documents/GitHub/eclipse-workspace/prototype/HAL_Driver/Inc/stm32l4xx_hal_hcd.h \
  C:/Users/spinkoh/Documents/GitHub/eclipse-workspace/prototype/Utilities/STM32L476G-Discovery/stm32l476g_discovery.h \
- C:/Users/spinkoh/Documents/GitHub/eclipse-workspace/prototype/inc/Trace.h
+ C:/Users/spinkoh/Documents/GitHub/eclipse-workspace/prototype/Utilities/STM32L476G-Discovery/stm32l476g_discovery_gyroscope.h \
+ C:/Users/spinkoh/Documents/GitHub/eclipse-workspace/prototype/Utilities/STM32L476G-Discovery/stm32l476g_discovery.h \
+ c:\users\spinkoh\documents\github\eclipse-workspace\prototype\utilities\components\l3gd20\l3gd20.h \
+ c:\users\spinkoh\documents\github\eclipse-workspace\prototype\utilities\components\common\gyro.h
 
 C:/Users/spinkoh/Documents/GitHub/eclipse-workspace/prototype/CMSIS/device/stm32l4xx.h:
 
@@ -220,4 +223,10 @@ C:/Users/spinkoh/Documents/GitHub/eclipse-workspace/prototype/HAL_Driver/Inc/stm
 
 C:/Users/spinkoh/Documents/GitHub/eclipse-workspace/prototype/Utilities/STM32L476G-Discovery/stm32l476g_discovery.h:
 
-C:/Users/spinkoh/Documents/GitHub/eclipse-workspace/prototype/inc/Trace.h:
+C:/Users/spinkoh/Documents/GitHub/eclipse-workspace/prototype/Utilities/STM32L476G-Discovery/stm32l476g_discovery_gyroscope.h:
+
+C:/Users/spinkoh/Documents/GitHub/eclipse-workspace/prototype/Utilities/STM32L476G-Discovery/stm32l476g_discovery.h:
+
+c:\users\spinkoh\documents\github\eclipse-workspace\prototype\utilities\components\l3gd20\l3gd20.h:
+
+c:\users\spinkoh\documents\github\eclipse-workspace\prototype\utilities\components\common\gyro.h:
