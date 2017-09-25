@@ -34,6 +34,7 @@ int main(void)
 	uint8_t gyroRet;
 	gyroRet = BSP_GYRO_Init();
 
+	/*in mdeg/sec*/
 	float gyroRead[3] = {0,0,0};
 
 
