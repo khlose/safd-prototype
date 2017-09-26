@@ -26,6 +26,25 @@ int main(void)
 	SystemClock_Config();
 	BSP_LED_Init(LED_GREEN);
 
+	/*Try out spi*/
+
+	/* SPI Init Routine
+	SpiHandle.Instance               = DISCOVERY_SPIx;
+
+	SpiHandle.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_256;
+	SpiHandle.Init.Direction         = SPI_DIRECTION_2LINES;
+	SpiHandle.Init.CLKPhase          = SPI_PHASE_1EDGE;
+	SpiHandle.Init.CLKPolarity       = SPI_POLARITY_HIGH;
+	SpiHandle.Init.CRCCalculation    = SPI_CRCCALCULATION_DISABLED;
+	SpiHandle.Init.CRCPolynomial     = 7;
+	SpiHandle.Init.DataSize          = SPI_DATASIZE_8BIT;
+	SpiHandle.Init.FirstBit          = SPI_FIRSTBIT_MSB;
+	SpiHandle.Init.NSS               = SPI_NSS_SOFT;
+	SpiHandle.Init.TIMode            = SPI_TIMODE_DISABLED;
+
+	SpiHandle.Init.Mode = SPI_MODE_MASTER;
+	 */
+
 	/*Try out joystick*/
 
 	BSP_JOY_Init(JOY_MODE_GPIO);
