@@ -12,6 +12,7 @@
 #include "stm32l4xx.h"
 #include "stm32l476g_discovery.h"
 #include "stm32l476g_discovery_gyroscope.h"
+#include <time.h>
 
 void SystemClock_Config(void);
 void Error_Handler(void);
@@ -35,21 +36,29 @@ int main(void)
 	gyroRet = BSP_GYRO_Init();
 
 	/*in mdeg/sec*/
-	float gyroRead[3] = {0,0,0};
-
+	float gyroRead1[3] = {0,0,0};
+	float gyroRead2[3] = {0,0,0};
 
 
 	while(1)
 	{
 
-		if(gyroRet == GYRO_OK) BSP_GYRO_GetXYZ(gyroRead);
+		clock_t begin = clock();
+		if(gyroRet == GYRO_OK) BSP_GYRO_GetXYZ(gyroRead1);
+		if(gyroRet == GYRO_OK) BSP_GYRO_GetXYZ(gyroRead2);
+		clock_t end = clock();
+		double timeSpent = (end-begin)/CLOCKS_PER_SEC;
 
-		if(gyroRead[2] < 0) BSP_LED_On(LED_GREEN);
+		/*timeSpent shows 0.0000 right now. Apparently it's too fast and its hard to capture? how do we do this...*/
+
+
+		if(gyroRead1[2] < 0) BSP_LED_On(LED_GREEN);
 		else BSP_LED_Off(LED_GREEN);
 
 
 
-		/*Use joystick to debug*/
+		/*Use joystick to debug: Just for fun*/
+
 		joyState = BSP_JOY_GetState();
 		if(joyState == JOY_UP)	BSP_LED_Off(LED_GREEN);
 		if(joyState == JOY_DOWN)	BSP_LED_On(LED_GREEN);

@@ -6,7 +6,6 @@
 C_SRCS += \
 ../src/Trace.c \
 ../src/main.c \
-../src/mems_util.c \
 ../src/stm32l4xx_it.c \
 ../src/syscalls.c \
 ../src/system_stm32l4xx.c \
@@ -15,7 +14,6 @@ C_SRCS += \
 OBJS += \
 ./src/Trace.o \
 ./src/main.o \
-./src/mems_util.o \
 ./src/stm32l4xx_it.o \
 ./src/syscalls.o \
 ./src/system_stm32l4xx.o \
@@ -24,7 +22,6 @@ OBJS += \
 C_DEPS += \
 ./src/Trace.d \
 ./src/main.d \
-./src/mems_util.d \
 ./src/stm32l4xx_it.d \
 ./src/syscalls.d \
 ./src/system_stm32l4xx.d \
