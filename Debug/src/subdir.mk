@@ -5,6 +5,7 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../src/Trace.c \
+../src/buffer.c \
 ../src/main.c \
 ../src/stm32l4xx_it.c \
 ../src/syscalls.c \
@@ -13,6 +14,7 @@ C_SRCS += \
 
 OBJS += \
 ./src/Trace.o \
+./src/buffer.o \
 ./src/main.o \
 ./src/stm32l4xx_it.o \
 ./src/syscalls.o \
@@ -21,6 +23,7 @@ OBJS += \
 
 C_DEPS += \
 ./src/Trace.d \
+./src/buffer.d \
 ./src/main.d \
 ./src/stm32l4xx_it.d \
 ./src/syscalls.d \

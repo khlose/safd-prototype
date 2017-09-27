@@ -12,8 +12,7 @@
 #include "stm32l4xx.h"
 #include "stm32l476g_discovery.h"
 #include "stm32l476g_discovery_gyroscope.h"
-#include <time.h>
-
+#include "buffer.h"
 void SystemClock_Config(void);
 void Error_Handler(void);
 
@@ -62,11 +61,9 @@ int main(void)
 	while(1)
 	{
 
-		clock_t begin = clock();
+
 		if(gyroRet == GYRO_OK) BSP_GYRO_GetXYZ(gyroRead1);
 		if(gyroRet == GYRO_OK) BSP_GYRO_GetXYZ(gyroRead2);
-		clock_t end = clock();
-		double timeSpent = (end-begin)/CLOCKS_PER_SEC;
 
 		/*timeSpent shows 0.0000 right now. Apparently it's too fast and its hard to capture? how do we do this...*/
 
