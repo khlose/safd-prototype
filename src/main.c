@@ -13,11 +13,12 @@
 #include "stm32l476g_discovery.h"
 #include "stm32l476g_discovery_gyroscope.h"
 #include "buffer.h"
+#include "i2c.h"
 
 void SystemClock_Config(void);
 void Error_Handler(void);
 
-SPI_HandleTypeDef SpiHandle;
+
 
 int main(void)
 {
@@ -63,7 +64,7 @@ int main(void)
 	//tmr3_init(670,62498);
 
 	/*Using I2C*/
-	//I2C1_Init();
+	I2C1_Init();
 
 
 
