@@ -56,12 +56,12 @@ int main(void)
 	/*in mdeg/sec*/
 	float gyroRead1[3] = {0,0,0};
 	float gyroRead2[3] = {0,0,0};
-
-
+	tmr3_init(670,62498);
+	BSP_LED_On(LED_GREEN);
 	while(1)
 	{
 
-		BSP_LED_On(LED_GREEN);
+
 		if(gyroRet == GYRO_OK) BSP_GYRO_GetXYZ(gyroRead1);
 		if(gyroRet == GYRO_OK) BSP_GYRO_GetXYZ(gyroRead2);
 

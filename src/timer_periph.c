@@ -4,14 +4,20 @@
  *  Created on: Sep 27, 2017
  *      Author: spinkoh
  */
+//https://relicware.com/timer-interrupt-on-stm32f4-using-hal/
 
 #include "stm32l4xx.h"
+#include "timer_periph.h"
+#include "stm32l476g_discovery.h"
 
 void tmr3_init(uint16_t ps, uint16_t period)
 {
+
+	__TIM3_CLK_ENABLE();
+
 	TIM_Base_InitTypeDef TIM_BaseStruct;
 
-	TIM_HandleTypeDef TIM_HandleStruct;
+	//TIM_HandleTypeDef TIM_HandleStruct;
 
 
 
@@ -38,5 +44,12 @@ void tmr3_init(uint16_t ps, uint16_t period)
 
 void TIM3_IRQHandler(void)
 {
+
+	if (__HAL_TIM_GET_ITSTATUS(&TIM_HandleStruct, TIM_IT_UPDATE) != RESET)
+	{
+		__HAL_TIM_CLEAR_FLAG(&TIM_HandleStruct, TIM_FLAG_UPDATE);
+		/*put your code here */
+		BSP_LED_Toggle(LED_GREEN);
+	}
 
 }
