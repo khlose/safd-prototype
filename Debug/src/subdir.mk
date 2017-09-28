@@ -10,6 +10,7 @@ C_SRCS += \
 ../src/stm32l4xx_it.c \
 ../src/syscalls.c \
 ../src/system_stm32l4xx.c \
+../src/timer_periph.c \
 ../src/trace_impl.c 
 
 OBJS += \
@@ -19,6 +20,7 @@ OBJS += \
 ./src/stm32l4xx_it.o \
 ./src/syscalls.o \
 ./src/system_stm32l4xx.o \
+./src/timer_periph.o \
 ./src/trace_impl.o 
 
 C_DEPS += \
@@ -28,6 +30,7 @@ C_DEPS += \
 ./src/stm32l4xx_it.d \
 ./src/syscalls.d \
 ./src/system_stm32l4xx.d \
+./src/timer_periph.d \
 ./src/trace_impl.d 
 
 

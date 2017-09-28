@@ -61,14 +61,14 @@ int main(void)
 	while(1)
 	{
 
-
+		BSP_LED_On(LED_GREEN);
 		if(gyroRet == GYRO_OK) BSP_GYRO_GetXYZ(gyroRead1);
 		if(gyroRet == GYRO_OK) BSP_GYRO_GetXYZ(gyroRead2);
 
 		/*timeSpent shows 0.0000 right now. Apparently it's too fast and its hard to capture? how do we do this...*/
 
 
-		if(gyroRead1[2] < 0) BSP_LED_On(LED_GREEN);
+
 		else BSP_LED_Off(LED_GREEN);
 
 

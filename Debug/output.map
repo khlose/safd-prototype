@@ -19764,19 +19764,33 @@ Discarded input sections
  .group         0x00000000        0x8 src/buffer.o
  .group         0x00000000        0x8 src/buffer.o
  .group         0x00000000        0x8 src/buffer.o
+ .group         0x00000000        0x8 src/buffer.o
+ .group         0x00000000        0x8 src/buffer.o
+ .group         0x00000000        0x8 src/buffer.o
+ .group         0x00000000        0x8 src/buffer.o
+ .group         0x00000000        0x8 src/buffer.o
+ .group         0x00000000        0x8 src/buffer.o
+ .group         0x00000000        0x8 src/buffer.o
+ .group         0x00000000        0x8 src/buffer.o
+ .group         0x00000000        0x8 src/buffer.o
+ .group         0x00000000        0x8 src/buffer.o
+ .group         0x00000000        0x8 src/buffer.o
+ .group         0x00000000        0x8 src/buffer.o
  .text          0x00000000        0x0 src/buffer.o
  .data          0x00000000        0x0 src/buffer.o
  .bss           0x00000000        0x0 src/buffer.o
  .text.init_buffer
-                0x00000000       0x54 src/buffer.o
- .text.add      0x00000000       0x24 src/buffer.o
- .text.fetch    0x00000000       0x18 src/buffer.o
- .debug_info    0x00000000      0x1fc src/buffer.o
- .debug_abbrev  0x00000000      0x131 src/buffer.o
- .debug_aranges
                 0x00000000       0x30 src/buffer.o
- .debug_ranges  0x00000000       0x20 src/buffer.o
- .debug_macro   0x00000000       0x6c src/buffer.o
+ .text.add      0x00000000       0x8c src/buffer.o
+ .text.fetch    0x00000000       0x88 src/buffer.o
+ .text.buffer_status
+                0x00000000       0x70 src/buffer.o
+ .debug_info    0x00000000      0x203 src/buffer.o
+ .debug_abbrev  0x00000000      0x12a src/buffer.o
+ .debug_aranges
+                0x00000000       0x38 src/buffer.o
+ .debug_ranges  0x00000000       0x28 src/buffer.o
+ .debug_macro   0x00000000      0x124 src/buffer.o
  .debug_macro   0x00000000      0x8aa src/buffer.o
  .debug_macro   0x00000000       0x22 src/buffer.o
  .debug_macro   0x00000000       0x87 src/buffer.o
@@ -19784,11 +19798,23 @@ Discarded input sections
  .debug_macro   0x00000000       0xfd src/buffer.o
  .debug_macro   0x00000000       0x5e src/buffer.o
  .debug_macro   0x00000000      0x1df src/buffer.o
- .debug_macro   0x00000000       0x1c src/buffer.o
- .debug_line    0x00000000      0x353 src/buffer.o
- .debug_str     0x00000000     0x349d src/buffer.o
+ .debug_macro   0x00000000       0x2e src/buffer.o
+ .debug_macro   0x00000000       0x52 src/buffer.o
+ .debug_macro   0x00000000       0x35 src/buffer.o
+ .debug_macro   0x00000000       0x9c src/buffer.o
+ .debug_macro   0x00000000      0x174 src/buffer.o
+ .debug_macro   0x00000000       0x52 src/buffer.o
+ .debug_macro   0x00000000       0x1f src/buffer.o
+ .debug_macro   0x00000000       0x43 src/buffer.o
+ .debug_macro   0x00000000       0x20 src/buffer.o
+ .debug_macro   0x00000000      0x187 src/buffer.o
+ .debug_macro   0x00000000      0x30d src/buffer.o
+ .debug_macro   0x00000000       0x10 src/buffer.o
+ .debug_macro   0x00000000       0x35 src/buffer.o
+ .debug_line    0x00000000      0x40c src/buffer.o
+ .debug_str     0x00000000     0x5ec6 src/buffer.o
  .comment       0x00000000       0x6f src/buffer.o
- .debug_frame   0x00000000       0x84 src/buffer.o
+ .debug_frame   0x00000000       0xa4 src/buffer.o
  .ARM.attributes
                 0x00000000       0x39 src/buffer.o
  .group         0x00000000        0x8 src/main.o
@@ -19994,7 +20020,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x68 src/main.o
  .debug_macro   0x00000000      0x320 src/main.o
  .debug_macro   0x00000000      0x211 src/main.o
- .debug_macro   0x00000000       0x1c src/main.o
+ .debug_macro   0x00000000       0x2e src/main.o
  COMMON         0x00000000       0x64 src/main.o
  .group         0x00000000        0x8 src/stm32l4xx_it.o
  .group         0x00000000        0x8 src/stm32l4xx_it.o
@@ -20483,6 +20509,205 @@ Discarded input sections
  .debug_macro   0x00000000       0xa5 src/system_stm32l4xx.o
  .debug_macro   0x00000000       0x68 src/system_stm32l4xx.o
  .debug_macro   0x00000000      0x320 src/system_stm32l4xx.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .group         0x00000000        0x8 src/timer_periph.o
+ .text          0x00000000        0x0 src/timer_periph.o
+ .data          0x00000000        0x0 src/timer_periph.o
+ .bss           0x00000000        0x0 src/timer_periph.o
+ .text.tmr3_init
+                0x00000000       0x74 src/timer_periph.o
+ .debug_macro   0x00000000      0x8aa src/timer_periph.o
+ .debug_macro   0x00000000       0x28 src/timer_periph.o
+ .debug_macro   0x00000000       0x28 src/timer_periph.o
+ .debug_macro   0x00000000       0x22 src/timer_periph.o
+ .debug_macro   0x00000000       0x87 src/timer_periph.o
+ .debug_macro   0x00000000       0x44 src/timer_periph.o
+ .debug_macro   0x00000000       0xfd src/timer_periph.o
+ .debug_macro   0x00000000       0x5e src/timer_periph.o
+ .debug_macro   0x00000000      0x1df src/timer_periph.o
+ .debug_macro   0x00000000       0x35 src/timer_periph.o
+ .debug_macro   0x00000000       0x50 src/timer_periph.o
+ .debug_macro   0x00000000      0xe66 src/timer_periph.o
+ .debug_macro   0x00000000    0x1a184 src/timer_periph.o
+ .debug_macro   0x00000000       0x43 src/timer_periph.o
+ .debug_macro   0x00000000      0x166 src/timer_periph.o
+ .debug_macro   0x00000000     0x36a1 src/timer_periph.o
+ .debug_macro   0x00000000       0x52 src/timer_periph.o
+ .debug_macro   0x00000000       0x35 src/timer_periph.o
+ .debug_macro   0x00000000       0x9c src/timer_periph.o
+ .debug_macro   0x00000000       0x16 src/timer_periph.o
+ .debug_macro   0x00000000       0x97 src/timer_periph.o
+ .debug_macro   0x00000000      0x30d src/timer_periph.o
+ .debug_macro   0x00000000       0xfd src/timer_periph.o
+ .debug_macro   0x00000000       0x10 src/timer_periph.o
+ .debug_macro   0x00000000       0x52 src/timer_periph.o
+ .debug_macro   0x00000000       0x1f src/timer_periph.o
+ .debug_macro   0x00000000       0x43 src/timer_periph.o
+ .debug_macro   0x00000000       0x20 src/timer_periph.o
+ .debug_macro   0x00000000      0x187 src/timer_periph.o
+ .debug_macro   0x00000000       0x10 src/timer_periph.o
+ .debug_macro   0x00000000       0x1c src/timer_periph.o
+ .debug_macro   0x00000000       0x52 src/timer_periph.o
+ .debug_macro   0x00000000       0x40 src/timer_periph.o
+ .debug_macro   0x00000000       0x10 src/timer_periph.o
+ .debug_macro   0x00000000       0x40 src/timer_periph.o
+ .debug_macro   0x00000000       0xd7 src/timer_periph.o
+ .debug_macro   0x00000000       0x16 src/timer_periph.o
+ .debug_macro   0x00000000      0x18b src/timer_periph.o
+ .debug_macro   0x00000000       0x57 src/timer_periph.o
+ .debug_macro   0x00000000     0x1566 src/timer_periph.o
+ .debug_macro   0x00000000      0x59e src/timer_periph.o
+ .debug_macro   0x00000000      0x148 src/timer_periph.o
+ .debug_macro   0x00000000      0x18b src/timer_periph.o
+ .debug_macro   0x00000000      0x25d src/timer_periph.o
+ .debug_macro   0x00000000      0x29c src/timer_periph.o
+ .debug_macro   0x00000000      0x23a src/timer_periph.o
+ .debug_macro   0x00000000      0x401 src/timer_periph.o
+ .debug_macro   0x00000000      0x5c8 src/timer_periph.o
+ .debug_macro   0x00000000      0x360 src/timer_periph.o
+ .debug_macro   0x00000000      0x263 src/timer_periph.o
+ .debug_macro   0x00000000       0xd5 src/timer_periph.o
+ .debug_macro   0x00000000       0x4d src/timer_periph.o
+ .debug_macro   0x00000000      0x153 src/timer_periph.o
+ .debug_macro   0x00000000       0xd9 src/timer_periph.o
+ .debug_macro   0x00000000       0xad src/timer_periph.o
+ .debug_macro   0x00000000      0x367 src/timer_periph.o
+ .debug_macro   0x00000000       0x10 src/timer_periph.o
+ .debug_macro   0x00000000       0xe4 src/timer_periph.o
+ .debug_macro   0x00000000      0x305 src/timer_periph.o
+ .debug_macro   0x00000000       0x71 src/timer_periph.o
+ .debug_macro   0x00000000       0xb3 src/timer_periph.o
+ .debug_macro   0x00000000      0x202 src/timer_periph.o
+ .debug_macro   0x00000000       0x61 src/timer_periph.o
+ .debug_macro   0x00000000       0x90 src/timer_periph.o
+ .debug_macro   0x00000000       0x87 src/timer_periph.o
+ .debug_macro   0x00000000      0x3e5 src/timer_periph.o
+ .debug_macro   0x00000000      0x272 src/timer_periph.o
+ .debug_macro   0x00000000       0xf8 src/timer_periph.o
+ .debug_macro   0x00000000      0x126 src/timer_periph.o
+ .debug_macro   0x00000000      0x3dc src/timer_periph.o
+ .debug_macro   0x00000000      0x2a3 src/timer_periph.o
+ .debug_macro   0x00000000       0x6d src/timer_periph.o
+ .debug_macro   0x00000000      0x321 src/timer_periph.o
+ .debug_macro   0x00000000      0x4ce src/timer_periph.o
+ .debug_macro   0x00000000       0xdd src/timer_periph.o
+ .debug_macro   0x00000000      0x447 src/timer_periph.o
+ .debug_macro   0x00000000      0x76c src/timer_periph.o
+ .debug_macro   0x00000000      0x198 src/timer_periph.o
+ .debug_macro   0x00000000      0x356 src/timer_periph.o
+ .debug_macro   0x00000000      0x2e2 src/timer_periph.o
+ .debug_macro   0x00000000      0x14c src/timer_periph.o
+ .debug_macro   0x00000000      0x9cd src/timer_periph.o
+ .debug_macro   0x00000000      0x1e0 src/timer_periph.o
+ .debug_macro   0x00000000      0x46a src/timer_periph.o
+ .debug_macro   0x00000000      0x535 src/timer_periph.o
+ .debug_macro   0x00000000       0x44 src/timer_periph.o
+ .debug_macro   0x00000000      0x241 src/timer_periph.o
+ .debug_macro   0x00000000       0x31 src/timer_periph.o
+ .debug_macro   0x00000000      0x256 src/timer_periph.o
+ .debug_macro   0x00000000       0x10 src/timer_periph.o
+ .debug_macro   0x00000000      0x248 src/timer_periph.o
+ .debug_macro   0x00000000      0x12f src/timer_periph.o
+ .debug_macro   0x00000000       0x89 src/timer_periph.o
+ .debug_macro   0x00000000      0x1d1 src/timer_periph.o
+ .debug_macro   0x00000000       0xa5 src/timer_periph.o
+ .debug_macro   0x00000000       0x68 src/timer_periph.o
+ .debug_macro   0x00000000      0x320 src/timer_periph.o
  .group         0x00000000        0x8 src/trace_impl.o
  .text          0x00000000        0x0 src/trace_impl.o
  .data          0x00000000        0x0 src/trace_impl.o
@@ -20719,6 +20944,7 @@ LOAD src/main.o
 LOAD src/stm32l4xx_it.o
 LOAD src/syscalls.o
 LOAD src/system_stm32l4xx.o
+LOAD src/timer_periph.o
 LOAD src/trace_impl.o
 LOAD startup/startup_stm32l476xx.o
 START GROUP
@@ -20953,19 +21179,22 @@ LOAD c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1
  .text.BSP_GYRO_GetXYZ
                 0x080032b8       0x28 Utilities/STM32L476G-Discovery/stm32l476g_discovery_gyroscope.o
                 0x080032b8                BSP_GYRO_GetXYZ
- .text.main     0x080032e0       0xa4 src/main.o
+ .text.main     0x080032e0       0x94 src/main.o
                 0x080032e0                main
  .text.SystemClock_Config
-                0x08003384      0x108 src/main.o
-                0x08003384                SystemClock_Config
+                0x08003374      0x108 src/main.o
+                0x08003374                SystemClock_Config
  .text.SysTick_Handler
-                0x0800348c       0x10 src/stm32l4xx_it.o
-                0x0800348c                SysTick_Handler
- .text._sbrk    0x0800349c       0x58 src/syscalls.o
-                0x0800349c                _sbrk
+                0x0800347c       0x10 src/stm32l4xx_it.o
+                0x0800347c                SysTick_Handler
+ .text._sbrk    0x0800348c       0x58 src/syscalls.o
+                0x0800348c                _sbrk
  .text.SystemInit
-                0x080034f4       0x6c src/system_stm32l4xx.o
-                0x080034f4                SystemInit
+                0x080034e4       0x6c src/system_stm32l4xx.o
+                0x080034e4                SystemInit
+ .text.TIM3_IRQHandler
+                0x08003550       0x10 src/timer_periph.o
+                0x08003550                TIM3_IRQHandler
  .text.Reset_Handler
                 0x08003560       0x50 startup/startup_stm32l476xx.o
                 0x08003560                Reset_Handler
@@ -21013,7 +21242,6 @@ LOAD c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1
                 0x080035b0                DMA1_Channel6_IRQHandler
                 0x080035b0                UART4_IRQHandler
                 0x080035b0                DMA2_Channel4_IRQHandler
-                0x080035b0                TIM3_IRQHandler
                 0x080035b0                RCC_IRQHandler
                 0x080035b0                DMA1_Channel1_IRQHandler
                 0x080035b0                Default_Handler
@@ -21318,38 +21546,40 @@ LOAD c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1
  .ARM.attributes
                 0x0000041f       0x39 src/system_stm32l4xx.o
  .ARM.attributes
-                0x00000458       0x21 startup/startup_stm32l476xx.o
+                0x00000458       0x39 src/timer_periph.o
  .ARM.attributes
-                0x00000479       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-errno.o)
+                0x00000491       0x21 startup/startup_stm32l476xx.o
  .ARM.attributes
-                0x000004ad       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-impure.o)
+                0x000004b2       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-errno.o)
  .ARM.attributes
-                0x000004e1       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-init.o)
+                0x000004e6       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-impure.o)
  .ARM.attributes
-                0x00000515       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-malloc.o)
+                0x0000051a       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-init.o)
  .ARM.attributes
-                0x00000549       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-mallocr.o)
+                0x0000054e       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-malloc.o)
  .ARM.attributes
-                0x0000057d       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-mlock.o)
+                0x00000582       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-mallocr.o)
  .ARM.attributes
-                0x000005b1       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-sbrkr.o)
+                0x000005b6       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-mlock.o)
  .ARM.attributes
-                0x000005e5       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__call_atexit.o)
+                0x000005ea       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-sbrkr.o)
  .ARM.attributes
-                0x00000619       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-atexit.o)
+                0x0000061e       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__call_atexit.o)
  .ARM.attributes
-                0x0000064d       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-fini.o)
+                0x00000652       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-atexit.o)
  .ARM.attributes
-                0x00000681       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-freer.o)
+                0x00000686       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-fini.o)
  .ARM.attributes
-                0x000006b5       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-reent.o)
+                0x000006ba       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-freer.o)
  .ARM.attributes
-                0x000006e9       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__atexit.o)
+                0x000006ee       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-reent.o)
  .ARM.attributes
-                0x0000071d       0x22 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crtn.o
+                0x00000722       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__atexit.o)
+ .ARM.attributes
+                0x00000756       0x22 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu/crtn.o
 OUTPUT(prototype.elf elf32-littlearm)
 
-.debug_info     0x00000000     0xeb84
+.debug_info     0x00000000     0xf3b7
  .debug_info    0x00000000      0x99e HAL_Driver/Src/stm32l4xx_hal.o
  .debug_info    0x0000099e      0xd28 HAL_Driver/Src/stm32l4xx_hal_cortex.o
  .debug_info    0x000016c6      0x7e1 HAL_Driver/Src/stm32l4xx_hal_gpio.o
@@ -21368,9 +21598,10 @@ OUTPUT(prototype.elf elf32-littlearm)
  .debug_info    0x0000ddc8       0xbd src/stm32l4xx_it.o
  .debug_info    0x0000de85      0x6ca src/syscalls.o
  .debug_info    0x0000e54f      0x5ac src/system_stm32l4xx.o
- .debug_info    0x0000eafb       0x89 startup/startup_stm32l476xx.o
+ .debug_info    0x0000eafb      0x833 src/timer_periph.o
+ .debug_info    0x0000f32e       0x89 startup/startup_stm32l476xx.o
 
-.debug_abbrev   0x00000000     0x1fb9
+.debug_abbrev   0x00000000     0x212f
  .debug_abbrev  0x00000000      0x1c1 HAL_Driver/Src/stm32l4xx_hal.o
  .debug_abbrev  0x000001c1      0x2b0 HAL_Driver/Src/stm32l4xx_hal_cortex.o
  .debug_abbrev  0x00000471      0x1af HAL_Driver/Src/stm32l4xx_hal_gpio.o
@@ -21389,9 +21620,10 @@ OUTPUT(prototype.elf elf32-littlearm)
  .debug_abbrev  0x00001ca1       0x6a src/stm32l4xx_it.o
  .debug_abbrev  0x00001d0b      0x177 src/syscalls.o
  .debug_abbrev  0x00001e82      0x125 src/system_stm32l4xx.o
- .debug_abbrev  0x00001fa7       0x12 startup/startup_stm32l476xx.o
+ .debug_abbrev  0x00001fa7      0x176 src/timer_periph.o
+ .debug_abbrev  0x0000211d       0x12 startup/startup_stm32l476xx.o
 
-.debug_aranges  0x00000000     0x1048
+.debug_aranges  0x00000000     0x1070
  .debug_aranges
                 0x00000000      0x100 HAL_Driver/Src/stm32l4xx_hal.o
  .debug_aranges
@@ -21429,9 +21661,11 @@ OUTPUT(prototype.elf elf32-littlearm)
  .debug_aranges
                 0x00000ff8       0x28 src/system_stm32l4xx.o
  .debug_aranges
-                0x00001020       0x28 startup/startup_stm32l476xx.o
+                0x00001020       0x28 src/timer_periph.o
+ .debug_aranges
+                0x00001048       0x28 startup/startup_stm32l476xx.o
 
-.debug_ranges   0x00000000      0xf20
+.debug_ranges   0x00000000      0xf38
  .debug_ranges  0x00000000       0xf0 HAL_Driver/Src/stm32l4xx_hal.o
  .debug_ranges  0x000000f0       0xf8 HAL_Driver/Src/stm32l4xx_hal_cortex.o
  .debug_ranges  0x000001e8       0x48 HAL_Driver/Src/stm32l4xx_hal_gpio.o
@@ -21450,9 +21684,10 @@ OUTPUT(prototype.elf elf32-littlearm)
  .debug_ranges  0x00000e38       0x10 src/stm32l4xx_it.o
  .debug_ranges  0x00000e48       0xa0 src/syscalls.o
  .debug_ranges  0x00000ee8       0x18 src/system_stm32l4xx.o
- .debug_ranges  0x00000f00       0x20 startup/startup_stm32l476xx.o
+ .debug_ranges  0x00000f00       0x18 src/timer_periph.o
+ .debug_ranges  0x00000f18       0x20 startup/startup_stm32l476xx.o
 
-.debug_macro    0x00000000    0x2fa03
+.debug_macro    0x00000000    0x2fece
  .debug_macro   0x00000000      0x519 HAL_Driver/Src/stm32l4xx_hal.o
  .debug_macro   0x00000519      0x8aa HAL_Driver/Src/stm32l4xx_hal.o
  .debug_macro   0x00000dc3      0x166 HAL_Driver/Src/stm32l4xx_hal.o
@@ -21583,8 +21818,9 @@ OUTPUT(prototype.elf elf32-littlearm)
  .debug_macro   0x0002f493       0x16 src/syscalls.o
  .debug_macro   0x0002f4a9       0x88 src/syscalls.o
  .debug_macro   0x0002f531      0x4d2 src/system_stm32l4xx.o
+ .debug_macro   0x0002fa03      0x4cb src/timer_periph.o
 
-.debug_line     0x00000000    0x10e9d
+.debug_line     0x00000000    0x11a77
  .debug_line    0x00000000      0xdef HAL_Driver/Src/stm32l4xx_hal.o
  .debug_line    0x00000def      0xea0 HAL_Driver/Src/stm32l4xx_hal_cortex.o
  .debug_line    0x00001c8f      0xd87 HAL_Driver/Src/stm32l4xx_hal_gpio.o
@@ -21599,13 +21835,14 @@ OUTPUT(prototype.elf elf32-littlearm)
  .debug_line    0x0000bdda      0x45c Utilities/Components/l3gd20/l3gd20.o
  .debug_line    0x0000c236     0x1288 Utilities/STM32L476G-Discovery/stm32l476g_discovery.o
  .debug_line    0x0000d4be      0xd87 Utilities/STM32L476G-Discovery/stm32l476g_discovery_gyroscope.o
- .debug_line    0x0000e245      0xdef src/main.o
- .debug_line    0x0000f034      0xc1b src/stm32l4xx_it.o
- .debug_line    0x0000fc4f      0x5cd src/syscalls.o
- .debug_line    0x0001021c      0xc02 src/system_stm32l4xx.o
- .debug_line    0x00010e1e       0x7f startup/startup_stm32l476xx.o
+ .debug_line    0x0000e245      0xde8 src/main.o
+ .debug_line    0x0000f02d      0xc1b src/stm32l4xx_it.o
+ .debug_line    0x0000fc48      0x5cd src/syscalls.o
+ .debug_line    0x00010215      0xc02 src/system_stm32l4xx.o
+ .debug_line    0x00010e17      0xbe1 src/timer_periph.o
+ .debug_line    0x000119f8       0x7f startup/startup_stm32l476xx.o
 
-.debug_str      0x00000000   0x12784e
+.debug_str      0x00000000   0x1278e1
  .debug_str     0x00000000   0x11f614 HAL_Driver/Src/stm32l4xx_hal.o
                              0x11fadd (size before relaxing)
  .debug_str     0x0011f614      0x3a3 HAL_Driver/Src/stm32l4xx_hal_cortex.o
@@ -21634,14 +21871,16 @@ OUTPUT(prototype.elf elf32-littlearm)
                              0x122779 (size before relaxing)
  .debug_str     0x0012632d      0x287 Utilities/STM32L476G-Discovery/stm32l476g_discovery_gyroscope.o
                              0x121a7a (size before relaxing)
- .debug_str     0x001265b4       0x86 src/main.o
-                             0x122687 (size before relaxing)
- .debug_str     0x0012663a       0x38 src/stm32l4xx_it.o
+ .debug_str     0x001265b4       0xc2 src/main.o
+                             0x1226c3 (size before relaxing)
+ .debug_str     0x00126676       0x38 src/stm32l4xx_it.o
                              0x11ee1d (size before relaxing)
- .debug_str     0x00126672     0x118c src/syscalls.o
+ .debug_str     0x001266ae     0x118c src/syscalls.o
                                0x7733 (size before relaxing)
- .debug_str     0x001277fe       0x50 src/system_stm32l4xx.o
+ .debug_str     0x0012783a       0x50 src/system_stm32l4xx.o
                              0x11f05c (size before relaxing)
+ .debug_str     0x0012788a       0x57 src/timer_periph.o
+                             0x11f72f (size before relaxing)
 
 .comment        0x00000000       0x6e
  .comment       0x00000000       0x6e HAL_Driver/Src/stm32l4xx_hal.o
@@ -21663,8 +21902,9 @@ OUTPUT(prototype.elf elf32-littlearm)
  .comment       0x0000006e       0x6f src/stm32l4xx_it.o
  .comment       0x0000006e       0x6f src/syscalls.o
  .comment       0x0000006e       0x6f src/system_stm32l4xx.o
+ .comment       0x0000006e       0x6f src/timer_periph.o
 
-.debug_frame    0x00000000     0x4580
+.debug_frame    0x00000000     0x45d8
  .debug_frame   0x00000000      0x3cc HAL_Driver/Src/stm32l4xx_hal.o
  .debug_frame   0x000003cc      0x450 HAL_Driver/Src/stm32l4xx_hal_cortex.o
  .debug_frame   0x0000081c      0x14c HAL_Driver/Src/stm32l4xx_hal_gpio.o
@@ -21683,15 +21923,16 @@ OUTPUT(prototype.elf elf32-littlearm)
  .debug_frame   0x00003f54       0x2c src/stm32l4xx_it.o
  .debug_frame   0x00003f80      0x2d4 src/syscalls.o
  .debug_frame   0x00004254       0x58 src/system_stm32l4xx.o
- .debug_frame   0x000042ac       0x20 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-errno.o)
- .debug_frame   0x000042cc       0x2c c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-init.o)
- .debug_frame   0x000042f8       0x30 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-malloc.o)
- .debug_frame   0x00004328       0x58 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-mallocr.o)
- .debug_frame   0x00004380       0x30 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-mlock.o)
- .debug_frame   0x000043b0       0x2c c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-sbrkr.o)
- .debug_frame   0x000043dc       0x50 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__call_atexit.o)
- .debug_frame   0x0000442c       0x20 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-atexit.o)
- .debug_frame   0x0000444c       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-fini.o)
- .debug_frame   0x00004480       0x74 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-freer.o)
- .debug_frame   0x000044f4       0x58 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-reent.o)
- .debug_frame   0x0000454c       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__atexit.o)
+ .debug_frame   0x000042ac       0x58 src/timer_periph.o
+ .debug_frame   0x00004304       0x20 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-errno.o)
+ .debug_frame   0x00004324       0x2c c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-init.o)
+ .debug_frame   0x00004350       0x30 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-malloc.o)
+ .debug_frame   0x00004380       0x58 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-mallocr.o)
+ .debug_frame   0x000043d8       0x30 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-mlock.o)
+ .debug_frame   0x00004408       0x2c c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-sbrkr.o)
+ .debug_frame   0x00004434       0x50 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00004484       0x20 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-atexit.o)
+ .debug_frame   0x000044a4       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-fini.o)
+ .debug_frame   0x000044d8       0x74 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-freer.o)
+ .debug_frame   0x0000454c       0x58 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-reent.o)
+ .debug_frame   0x000045a4       0x34 c:/users/spinkoh/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.13.2.201703061525/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__atexit.o)
