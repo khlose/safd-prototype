@@ -13,6 +13,7 @@
 #include "stm32l476g_discovery.h"
 #include "stm32l476g_discovery_gyroscope.h"
 #include "buffer.h"
+
 void SystemClock_Config(void);
 void Error_Handler(void);
 
@@ -24,12 +25,11 @@ int main(void)
 	HAL_Init();
 	SystemClock_Config();
 	BSP_LED_Init(LED_GREEN);
+	BSP_LED_On(LED_GREEN);
 
-	/*Try out spi*/
 
 	/* SPI Init Routine
 	SpiHandle.Instance               = DISCOVERY_SPIx;
-
 	SpiHandle.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_256;
 	SpiHandle.Init.Direction         = SPI_DIRECTION_2LINES;
 	SpiHandle.Init.CLKPhase          = SPI_PHASE_1EDGE;
@@ -40,36 +40,44 @@ int main(void)
 	SpiHandle.Init.FirstBit          = SPI_FIRSTBIT_MSB;
 	SpiHandle.Init.NSS               = SPI_NSS_SOFT;
 	SpiHandle.Init.TIMode            = SPI_TIMODE_DISABLED;
-
 	SpiHandle.Init.Mode = SPI_MODE_MASTER;
 	 */
 
-	/*Try out joystick*/
 
+	/*Try out joystick*/
 	BSP_JOY_Init(JOY_MODE_GPIO);
 	JOYState_TypeDef joyState;
+
 
 	/*Initialize gyroscope for angular velocity measurement*/
 	uint8_t gyroRet;
 	gyroRet = BSP_GYRO_Init();
 
+
 	/*in mdeg/sec*/
-	float gyroRead1[3] = {0,0,0};
-	float gyroRead2[3] = {0,0,0};
-	tmr3_init(670,62498);
-	BSP_LED_On(LED_GREEN);
+	//float gyroRead1[3] = {0,0,0};
+	//float gyroRead2[3] = {0,0,0};
+
+
+	/*TIM3 timer set up*/
+	//tmr3_init(670,62498);
+
+	/*Using I2C*/
+	//I2C1_Init();
+
+
+
 	while(1)
 	{
 
+		//I2C2 READ WRITE HERE
 
+		/*
 		if(gyroRet == GYRO_OK) BSP_GYRO_GetXYZ(gyroRead1);
 		if(gyroRet == GYRO_OK) BSP_GYRO_GetXYZ(gyroRead2);
-
-		/*timeSpent shows 0.0000 right now. Apparently it's too fast and its hard to capture? how do we do this...*/
-
+		 */
 
 
-		else BSP_LED_Off(LED_GREEN);
 
 
 
