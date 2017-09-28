@@ -66,7 +66,9 @@ int main(void)
 	/*Using I2C*/
 	I2C1_Init();
 
+	HAL_StatusTypeDef readStat;
 
+	uint8_t pBuffer[2] = {0};
 
 	while(1)
 	{
@@ -78,6 +80,7 @@ int main(void)
 		if(gyroRet == GYRO_OK) BSP_GYRO_GetXYZ(gyroRead2);
 		 */
 
+		readStat = I2C1_ReadBuffer(0b01101010,0x0F,8,pBuffer,8);
 
 
 

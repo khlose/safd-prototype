@@ -6,6 +6,7 @@
 C_SRCS += \
 ../src/Trace.c \
 ../src/buffer.c \
+../src/fall_detection.c \
 ../src/i2c.c \
 ../src/main.c \
 ../src/stm32l4xx_it.c \
@@ -17,6 +18,7 @@ C_SRCS += \
 OBJS += \
 ./src/Trace.o \
 ./src/buffer.o \
+./src/fall_detection.o \
 ./src/i2c.o \
 ./src/main.o \
 ./src/stm32l4xx_it.o \
@@ -28,6 +30,7 @@ OBJS += \
 C_DEPS += \
 ./src/Trace.d \
 ./src/buffer.d \
+./src/fall_detection.d \
 ./src/i2c.d \
 ./src/main.d \
 ./src/stm32l4xx_it.d \
