@@ -18,6 +18,7 @@
 void SystemClock_Config(void);
 void Error_Handler(void);
 
+I2C_HandleTypeDef hi2c1;
 
 
 int main(void)
@@ -64,11 +65,35 @@ int main(void)
 	//tmr3_init(670,62498);
 
 	/*Using I2C*/
-	I2C1_Init();
+	//I2C1_Init();
 
-	HAL_StatusTypeDef readStat;
 
-	uint8_t pBuffer[2] = {0};
+
+	HAL_StatusTypeDef readStat,writeStat = HAL_OK;
+
+	uint8_t rBuffer[1] = {0};
+
+	uint8_t wBuffer[1] = {0x38};
+
+	uint8_t readData = 0;
+	uint16_t regAddr = 0x0F;
+	uint16_t slaveAddress = 0b01101011;
+	uint16_t regSize = 1;
+	uint16_t dataLength = 1;
+	//writeStat = I2C1_WriteBuffer(slaveAddress,regAddr,8,wBuffer,8);
+	//HAL_Delay(5);
+	//readStat = I2C1_ReadBuffer(slaveAddress,regAddr,regSize,pBuffer,dataLength);
+	//HAL_Delay(5);
+	//writeStat = I2C1_WriteBuffer(slaveAddress,0x18,8,wBuffer,8);
+
+
+
+	I2C_HandleTypeDef I2c1Handle;
+
+	/*Init I2C1*/
+
+	I2C1_Init_Mod(&I2c1Handle);
+
 
 	while(1)
 	{
@@ -80,10 +105,10 @@ int main(void)
 		if(gyroRet == GYRO_OK) BSP_GYRO_GetXYZ(gyroRead2);
 		 */
 
-		readStat = I2C1_ReadBuffer(0b01101010,0x0F,8,pBuffer,8);
 
+		//readStat = I2C1_ReadBuffer(slaveAddress,regAddr,regSize,pBuffer,dataLength);
 
-
+		readStat = HAL_I2C_Mem_Read(&I2c1Handle,0x6B<<1,0x0F,I2C_MEMADD_SIZE_8BIT,&readData,1,1000);
 
 		/*Use joystick to debug: Just for fun*/
 
@@ -155,4 +180,17 @@ void Error_Handler(void)
   while(1)
   {
   }
+}
+
+void Motor_Init(void){
+	GPIO_InitTypeDef GPIO_InitStructure;
+
+	//__HAL_
+	/*
+	GPIO_InitStructure.Pin = GPIO_PIN_;
+	GPIO_InitStructure.Mode = GPIO_MODE_OUTPUT_PP;
+	GPIO_InitStructure.Pull = GPIO_NOPULL;
+	GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_HIGH;
+	GPIO_InitStructure.Alternate = 0;
+	 */
 }

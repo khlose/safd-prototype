@@ -13,22 +13,22 @@
 static I2C_HandleTypeDef I2c1Handle;
 #endif /* HAL_I2C_MODULE_ENABLED */
 
-void I2C1_Init(void)
+void I2C1_Init_Mod(I2C_HandleTypeDef* I2c1Handle)
 {
   if(HAL_I2C_GetState(&I2c1Handle) == HAL_I2C_STATE_RESET)
   {
-    I2c1Handle.Instance              = DISCOVERY_I2C1;
-    I2c1Handle.Init.Timing           = DISCOVERY_I2C1_TIMING;
-    I2c1Handle.Init.OwnAddress1      = 0;
-    I2c1Handle.Init.AddressingMode   = I2C_ADDRESSINGMODE_7BIT;
-    I2c1Handle.Init.DualAddressMode  = I2C_DUALADDRESS_DISABLE;
-    I2c1Handle.Init.OwnAddress2      = 0;
-    I2c1Handle.Init.GeneralCallMode  = I2C_GENERALCALL_DISABLE;
-    I2c1Handle.Init.NoStretchMode    = I2C_NOSTRETCH_DISABLE;
+    I2c1Handle->Instance              = DISCOVERY_I2C1;
+    I2c1Handle->Init.Timing           = DISCOVERY_I2C1_TIMING;
+    I2c1Handle->Init.OwnAddress1      = 0;
+    I2c1Handle->Init.AddressingMode   = I2C_ADDRESSINGMODE_7BIT;
+    I2c1Handle->Init.DualAddressMode  = I2C_DUALADDRESS_DISABLE;
+    I2c1Handle->Init.OwnAddress2      = 0;
+    I2c1Handle->Init.GeneralCallMode  = I2C_GENERALCALL_DISABLE;
+    I2c1Handle->Init.NoStretchMode    = I2C_NOSTRETCH_DISABLE;
 
     /* Init the I2C */
-    I2C1_MspInit(&I2c1Handle);
-    HAL_I2C_Init(&I2c1Handle);
+    I2C1_MspInit(I2c1Handle);
+    HAL_I2C_Init(I2c1Handle);
   }
 }
 
