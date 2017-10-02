@@ -2,16 +2,10 @@
  * i2c.c
  *
  *  Created on: Sep 28, 2017
- *      Author: Station13
+ *      Author: Schwin Pinkoh
  */
 #include "i2c.h"
 
-/**
- * @brief BUS variables
- */
-#if defined(HAL_I2C_MODULE_ENABLED)
-static I2C_HandleTypeDef I2c1Handle;
-#endif /* HAL_I2C_MODULE_ENABLED */
 
 void I2C1_Init_Mod(I2C_HandleTypeDef* I2c1Handle)
 {
@@ -88,13 +82,13 @@ void I2C1_MspInit(I2C_HandleTypeDef *hi2c)
   * @brief Discovery I2C1 Bus Deitialization
   * @retval None
   */
-void I2C1_DeInit(void)
+void I2C1_DeInit(I2C_HandleTypeDef* I2c1Handle)
 {
-  if(HAL_I2C_GetState(&I2c1Handle) != HAL_I2C_STATE_RESET)
+  if(HAL_I2C_GetState(I2c1Handle) != HAL_I2C_STATE_RESET)
   {
     /* Deinit the I2C */
-    HAL_I2C_DeInit(&I2c1Handle);
-    I2C1_MspDeInit(&I2c1Handle);
+    HAL_I2C_DeInit(I2c1Handle);
+    I2C1_MspDeInit(I2c1Handle);
   }
 }
 
@@ -132,63 +126,3 @@ void I2C1_MspDeInit(I2C_HandleTypeDef *hi2c)
   }
 }
 
-/**
-  * @brief  Write a value in a register of the device through BUS.
-  * @param  Addr: Device address on BUS Bus.
-  * @param  Reg: The target register address to write
-  * @param  RegSize: The target register size (can be 8BIT or 16BIT)
-  * @param  pBuffer: The target register value to be written
-  * @param  Length: buffer size to be written
-  * @retval None
-  */
-HAL_StatusTypeDef I2C1_WriteBuffer(uint16_t Addr, uint16_t Reg, uint16_t RegSize, uint8_t *pBuffer, uint16_t Length)
-{
-  HAL_StatusTypeDef status = HAL_OK;
-
-  status = HAL_I2C_Mem_Write(&I2c1Handle, Addr, (uint16_t)Reg, RegSize, pBuffer, Length, DISCOVERY_I2C2_TIMEOUT_MAX);
-
-/* Check the communication status */
-  if(status != HAL_OK)
-  {
-    /* Re-Initiaize the BUS */
-    I2C1_Error();
-  }
-  return status;
-}
-
-/**
-  * @brief  Reads multiple data on the BUS.
-  * @param  Addr: I2C Address
-  * @param  Reg: Reg Address
-  * @param  RegSize : The target register size (can be 8BIT or 16BIT)
-  * @param  pBuffer: pointer to read data buffer
-  * @param  Length: length of the data
-  * @retval 0 if no problems to read multiple data
-  */
-HAL_StatusTypeDef I2C1_ReadBuffer(uint16_t Addr, uint16_t Reg, uint16_t RegSize, uint8_t *pBuffer, uint16_t Length)
-{
-  HAL_StatusTypeDef status = HAL_OK;
-
-  status = HAL_I2C_Mem_Read(&I2c1Handle, Addr, (uint16_t)Reg, RegSize, pBuffer, Length, DISCOVERY_I2C2_TIMEOUT_MAX);
-
-/* Check the communication status */
-  if(status != HAL_OK)
-  {
-    /* Re-Initiaize the BUS */
-    I2C1_Error();
-  }
-  return status;
-}
-
-/**
-  * @brief Discovery I2C1 error treatment function
-  * @retval None
-  */
-void I2C1_Error (void)
-{
-  /* De-initialize the I2C communication BUS */
-  HAL_I2C_DeInit(&I2c1Handle);
-
-  /* Re- Initiaize the I2C communication BUS */
-  I2C1_Init();
-}

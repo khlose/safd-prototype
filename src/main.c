@@ -14,6 +14,7 @@
 #include "stm32l476g_discovery_gyroscope.h"
 #include "buffer.h"
 #include "i2c.h"
+#include "lsm6ds3.h"
 
 void SystemClock_Config(void);
 void Error_Handler(void);
@@ -28,23 +29,6 @@ int main(void)
 	SystemClock_Config();
 	BSP_LED_Init(LED_GREEN);
 	BSP_LED_On(LED_GREEN);
-
-
-	/* SPI Init Routine
-	SpiHandle.Instance               = DISCOVERY_SPIx;
-	SpiHandle.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_256;
-	SpiHandle.Init.Direction         = SPI_DIRECTION_2LINES;
-	SpiHandle.Init.CLKPhase          = SPI_PHASE_1EDGE;
-	SpiHandle.Init.CLKPolarity       = SPI_POLARITY_HIGH;
-	SpiHandle.Init.CRCCalculation    = SPI_CRCCALCULATION_DISABLED;
-	SpiHandle.Init.CRCPolynomial     = 7;
-	SpiHandle.Init.DataSize          = SPI_DATASIZE_8BIT;
-	SpiHandle.Init.FirstBit          = SPI_FIRSTBIT_MSB;
-	SpiHandle.Init.NSS               = SPI_NSS_SOFT;
-	SpiHandle.Init.TIMode            = SPI_TIMODE_DISABLED;
-	SpiHandle.Init.Mode = SPI_MODE_MASTER;
-	 */
-
 
 	/*Try out joystick*/
 	BSP_JOY_Init(JOY_MODE_GPIO);
@@ -71,29 +55,11 @@ int main(void)
 
 	HAL_StatusTypeDef readStat,writeStat = HAL_OK;
 
-	uint8_t rBuffer[1] = {0};
-
-	uint8_t wBuffer[1] = {0x38};
-
 	uint8_t readData = 0;
-	uint16_t regAddr = 0x0F;
-	uint16_t slaveAddress = 0b01101011;
-	uint16_t regSize = 1;
-	uint16_t dataLength = 1;
-	//writeStat = I2C1_WriteBuffer(slaveAddress,regAddr,8,wBuffer,8);
-	//HAL_Delay(5);
-	//readStat = I2C1_ReadBuffer(slaveAddress,regAddr,regSize,pBuffer,dataLength);
-	//HAL_Delay(5);
-	//writeStat = I2C1_WriteBuffer(slaveAddress,0x18,8,wBuffer,8);
-
-
 
 	I2C_HandleTypeDef I2c1Handle;
-
 	/*Init I2C1*/
-
 	I2C1_Init_Mod(&I2c1Handle);
-
 
 	while(1)
 	{
@@ -109,6 +75,9 @@ int main(void)
 		//readStat = I2C1_ReadBuffer(slaveAddress,regAddr,regSize,pBuffer,dataLength);
 
 		readStat = HAL_I2C_Mem_Read(&I2c1Handle,0x6B<<1,0x0F,I2C_MEMADD_SIZE_8BIT,&readData,1,1000);
+
+		HAL_Delay(1000);
+		//LSM6DS3_StatusTypedef initStatus = init_accelerometer(&I2c1Handle,SENSOR_1,sensitivity_4g,rate1_66khz);
 
 		/*Use joystick to debug: Just for fun*/
 

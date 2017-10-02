@@ -8,6 +8,7 @@ C_SRCS += \
 ../src/buffer.c \
 ../src/fall_detection.c \
 ../src/i2c.c \
+../src/lsm6ds3.c \
 ../src/main.c \
 ../src/stm32l4xx_it.c \
 ../src/syscalls.c \
@@ -20,6 +21,7 @@ OBJS += \
 ./src/buffer.o \
 ./src/fall_detection.o \
 ./src/i2c.o \
+./src/lsm6ds3.o \
 ./src/main.o \
 ./src/stm32l4xx_it.o \
 ./src/syscalls.o \
@@ -32,6 +34,7 @@ C_DEPS += \
 ./src/buffer.d \
 ./src/fall_detection.d \
 ./src/i2c.d \
+./src/lsm6ds3.d \
 ./src/main.d \
 ./src/stm32l4xx_it.d \
 ./src/syscalls.d \

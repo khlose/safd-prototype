@@ -111,6 +111,7 @@
 "src/buffer.o"
 "src/fall_detection.o"
 "src/i2c.o"
+"src/lsm6ds3.o"
 "src/main.o"
 "src/stm32l4xx_it.o"
 "src/syscalls.o"

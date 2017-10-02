@@ -77,7 +77,8 @@ src/main.o: ../src/main.c \
  c:\users\station13\documents\github\safd-prototype\utilities\components\l3gd20\l3gd20.h \
  c:\users\station13\documents\github\safd-prototype\utilities\components\common\gyro.h \
  C:/Users/Station13/Documents/GitHub/safd-prototype/inc/buffer.h \
- C:/Users/Station13/Documents/GitHub/safd-prototype/inc/i2c.h
+ C:/Users/Station13/Documents/GitHub/safd-prototype/inc/i2c.h \
+ C:/Users/Station13/Documents/GitHub/safd-prototype/inc/lsm6ds3.h
 
 C:/Users/Station13/Documents/GitHub/safd-prototype/CMSIS/device/stm32l4xx.h:
 
@@ -236,3 +237,5 @@ c:\users\station13\documents\github\safd-prototype\utilities\components\common\g
 C:/Users/Station13/Documents/GitHub/safd-prototype/inc/buffer.h:
 
 C:/Users/Station13/Documents/GitHub/safd-prototype/inc/i2c.h:
+
+C:/Users/Station13/Documents/GitHub/safd-prototype/inc/lsm6ds3.h:
